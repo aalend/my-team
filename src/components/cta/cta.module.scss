@@ -1,0 +1,35 @@
+@use '../../styles/variables' as *;
+
+.cta {
+  background: url('/src/assets/bg-pattern-home-6-about-5.svg') no-repeat;
+  background-position: left bottom;
+  background-color: var(--coral-400);
+  padding-block: var(--space-3xl);
+
+  &__button {
+    padding: var(--space-xs) var(--space-m);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--green-600);
+    border: 2px solid var(--green-600);
+    border-radius: 999px;
+  }
+
+  &__grid {
+    justify-items: center;
+
+    h2 {
+      color: var(--green-600);
+      font-size: var(--step-3);
+    }
+
+    @media (width >= $md-query) {
+      --columns: 2;
+      align-items: center;
+
+      & :last-child {
+        justify-self: end;
+      }
+    }
+  }
+}

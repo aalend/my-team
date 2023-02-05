@@ -1,0 +1,18 @@
+body {
+  background-color: var(--green-400);
+  color: var(--white-200);
+  font-family: var(--family-base);
+  text-rendering: optimizeSpeed;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Bump up specificity without using !important
+ul li a[aria-current='page'] {
+  color: var(--coral-400);
+}

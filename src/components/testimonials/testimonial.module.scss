@@ -1,0 +1,50 @@
+@use '../../styles/variables' as *;
+
+.testimonials {
+  background: url('/src/assets/bg-pattern-home-4-about-3.svg') no-repeat,
+    url('/src/assets/bg-pattern-home-5.svg') no-repeat;
+  background-position: left top, bottom right;
+  background-color: var(--green-500);
+  padding-block: var(--space-3xl);
+
+  h2 {
+    font-size: var(--step-4);
+    font-weight: 600;
+    line-height: 1.15;
+
+    span {
+      color: var(--coral-400);
+    }
+  }
+
+  &__grid {
+    --columns: 1;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: var(--gutter);
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: var(--gutter);
+
+    article {
+      display: grid;
+      gap: var(--space-s);
+      justify-items: center;
+    }
+
+    img {
+      border-radius: 100vh;
+      border: 3px solid var(--white-200);
+    }
+
+    @media (width >= $md-query) {
+      --columns: 3;
+
+      display: grid;
+      grid-template-columns: repeat(var(--columns), 1fr);
+      gap: var(--gutter);
+    }
+  }
+}

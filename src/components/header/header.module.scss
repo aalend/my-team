@@ -1,0 +1,10 @@
+.site-head {
+  padding-block: var(--space-xl);
+
+  &__grid {
+    --columns: 4;
+
+    grid-template-columns: repeat(var(--columns), 1fr);
+    align-items: center;
+  }
+}

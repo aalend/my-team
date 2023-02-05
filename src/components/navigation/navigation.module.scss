@@ -1,0 +1,19 @@
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 2 / span 3;
+
+  & ul {
+    display: flex;
+    gap: var(--space-s-l);
+
+    &:last-child {
+      justify-self: end;
+    }
+  }
+
+  & a {
+    color: var(--white-200);
+    text-decoration: none;
+  }
+}

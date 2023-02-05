@@ -1,0 +1,68 @@
+@use '../../styles/variables' as *;
+
+.site-foot {
+  background-color: var(--green-700);
+  padding-block: var(--space-3xl);
+
+  address a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__grid {
+    justify-items: center;
+    text-align: center;
+
+    nav ul {
+      display: flex;
+      gap: var(--gutter);
+
+      a {
+        color: var(--white-200);
+        text-decoration: none;
+      }
+    }
+
+    @media (width >= $sm-query) {
+      --columns: 2;
+      justify-items: start;
+      gap: var(--space-l);
+      text-align: left;
+
+      address {
+        justify-self: end;
+        text-align: right;
+
+        & + div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          grid-column: 1 / -1;
+        }
+      }
+    }
+
+    @media (width >= $md-query) {
+      --columns: 3;
+
+      address {
+        justify-self: start;
+        text-align: left;
+
+        & + div {
+          flex-direction: column;
+          align-items: flex-end;
+          grid-column: unset;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

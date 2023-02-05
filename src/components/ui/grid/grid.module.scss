@@ -1,0 +1,7 @@
+.grid {
+  --gutter: var(--grid-gutter);
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: var(--gutter);
+}
