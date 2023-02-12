@@ -1,0 +1,21 @@
+@use '../../../styles/variables' as *;
+
+.splitter {
+  padding-block: var(--space-2xl);
+
+  & :last-child {
+    margin-block-end: var(--space-l);
+  }
+
+  @media (width >= $md-query) {
+    display: flex;
+
+    & > * {
+      flex-grow: 1;
+    }
+
+    & :last-child {
+      margin-block-end: 0;
+    }
+  }
+}

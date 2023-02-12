@@ -7,25 +7,35 @@
   padding-block: var(--space-3xl);
 
   &__button {
-    padding: var(--space-xs) var(--space-m);
+    padding: var(--space-xs) var(--space-l);
     text-decoration: none;
+    font-size: var(--step-1);
     font-weight: 600;
     color: var(--green-600);
     border: 2px solid var(--green-600);
     border-radius: 999px;
+
+    &:hover {
+      background-color: var(--green-600);
+      color: var(--coral-400);
+    }
   }
 
   &__grid {
     justify-items: center;
+    gap: var(--space-2xl);
 
     h2 {
       color: var(--green-600);
-      font-size: var(--step-3);
     }
 
     @media (width >= $md-query) {
-      --columns: 2;
+      --columns: 3;
       align-items: center;
+
+      h2 {
+        grid-column: span 2;
+      }
 
       & :last-child {
         justify-self: end;

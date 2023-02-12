@@ -1,8 +1,29 @@
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: inherit;
+}
+
 body {
   background-color: var(--green-400);
   color: var(--white-200);
   font-family: var(--family-base);
   text-rendering: optimizeSpeed;
+}
+
+h1 {
+  font-size: var(--step-7);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--step-5);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+p {
+  font-weight: 600;
 }
 
 ul,

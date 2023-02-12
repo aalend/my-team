@@ -1,14 +1,30 @@
 .navigation {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-column: 2 / span 3;
 
   & ul {
     display: flex;
     gap: var(--space-s-l);
+    font-size: var(--step-1);
+    font-weight: 600;
 
     &:last-child {
       justify-self: end;
+      border: 2px solid var(--white-200);
+      padding: var(--space-2xs) var(--space-l);
+      border-radius: 999px;
+      transition: scale 175ms ease;
+
+      &:hover {
+        background-color: var(--white-200);
+        scale: 1.15;
+
+        a {
+          color: var(--green-400);
+        }
+      }
     }
   }
 

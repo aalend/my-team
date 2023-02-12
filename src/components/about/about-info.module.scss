@@ -1,0 +1,27 @@
+@use '../../styles/variables' as *;
+
+.about-info {
+  padding-block: var(--space-3xl);
+  text-align: center;
+  background: url('/src/assets/bg-pattern-about-1-mobile-nav-1.svg') no-repeat;
+  background-position: bottom -100px right -100px;
+
+  &__grid {
+    gap: var(--space-2xl);
+
+    p {
+      max-width: 60ch;
+      margin-inline: auto;
+    }
+
+    @media (width >= $md-query) {
+      --columns: 4;
+
+      text-align: left;
+
+      p {
+        grid-column: span 3;
+      }
+    }
+  }
+}

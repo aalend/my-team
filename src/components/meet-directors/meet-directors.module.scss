@@ -1,0 +1,27 @@
+@use '../../styles/variables' as *;
+
+.meet-directors {
+  background: url('/src/assets/bg-pattern-about-2-contact-1.svg') no-repeat,
+    url('/src/assets/bg-pattern-home-4-about-3.svg') no-repeat;
+  background-color: var(--green-500);
+  background-position: top left -100px, bottom right;
+  padding-block: calc(var(--space-3xl) * 2);
+
+  h2 {
+    text-align: center;
+    margin-block-end: var(--space-2xl);
+  }
+
+  &__grid {
+    --columns: 1;
+    gap: var(--space-xl);
+
+    @media (width >= $md-query) {
+      --columns: 2;
+    }
+
+    @media (width >= $lg-query) {
+      --columns: 3;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+
+  textarea {
+    padding: var(--space-2xs) var(--space-xs);
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+}

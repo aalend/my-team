@@ -1,0 +1,13 @@
+.content {
+  &__grid {
+    h3 {
+      font-size: var(--step-4);
+    }
+
+    article div {
+      display: flex;
+      align-items: center;
+      gap: var(--space-l);
+    }
+  }
+}

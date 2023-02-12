@@ -8,7 +8,7 @@ export function Hero() {
       <Container>
         <Grid className={styles['hero__grid']}>
           <h1 id='header'>
-            Find the best <span>talent</span>
+            Find the best <span className='highlight'>talent</span>
           </h1>
           <p>
             Finding the right people and building high performing teams can be hard. Most companies

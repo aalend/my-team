@@ -1,0 +1,23 @@
+.our-clients {
+  padding-block: var(--space-3xl);
+  background: url('/src/assets//bg-pattern-about-4.svg') no-repeat;
+  background-position: top left;
+  background-color: var(--green-600);
+
+  h2 {
+    margin-block-end: var(--space-xl);
+    text-align: center;
+  }
+
+  &__grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-xl);
+
+    img {
+      max-width: 165px;
+    }
+  }
+}
