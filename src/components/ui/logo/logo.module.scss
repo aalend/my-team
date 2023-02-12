@@ -1,4 +1,10 @@
 .logo {
-  font-size: var(--step-4);
+  font-size: var(--step-1);
   font-weight: 900;
+  text-decoration: none;
+  color: currentColor;
+
+  &:hover {
+    color: var(--coral-400);
+  }
 }
