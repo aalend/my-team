@@ -2,8 +2,7 @@
   padding-block: var(--space-xl);
 
   &__grid {
-    --columns: 4;
-
+    display: flex;
     align-items: center;
   }
 }
