@@ -1,21 +1,25 @@
 import { Grid } from '@/components/ui';
 import styles from './content.module.scss';
 
+import img1 from '/src/assets/feature-img-1.svg';
+import img2 from '/src/assets/feature-img-2.svg';
+import img3 from '/src/assets/feature-img-3.svg';
+
 const contactFeatures = [
   {
     id: 1,
     title: 'The quality of our talent network',
-    imgPath: 'src/assets/feature-img-1.svg',
+    imgPath: img1,
   },
   {
     id: 2,
     title: 'Usage & implementation of our software',
-    imgPath: 'src/assets/feature-img-2.svg',
+    imgPath: img2,
   },
   {
     id: 3,
     title: 'How we help drive innovation',
-    imgPath: 'src/assets/feature-img-3.svg',
+    imgPath: img3,
   },
 ];
 

@@ -1,7 +1,16 @@
+import testimonial1 from '/src/assets/testimonial-avatar-1.jpg';
+import testimonial2 from '/src/assets/testimonial-avatar-2.jpg';
+import testimonial3 from '/src/assets/testimonial-avatar-3.jpg';
+import logo1 from '/src/assets/logo-the-verge.png';
+import logo2 from '/src/assets/logo-jakarta-post.png';
+import logo3 from '/src/assets/logo-the-guardian.png';
+import logo4 from '/src/assets/logo-tech-radar.png';
+import logo5 from '/src/assets/logo-gadgets-now.png';
+
 export const testimonials = [
   {
     id: 1,
-    avatar: './src/assets/testimonial-avatar-1.jpg',
+    avatar: testimonial1,
     name: 'Kady Baker',
     job: 'Product Manager at Bookmark',
     content:
@@ -9,7 +18,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    avatar: './src/assets/testimonial-avatar-2.jpg',
+    avatar: testimonial2,
     name: 'Aiysha Reese',
     job: 'Founder of Manage',
     content:
@@ -17,7 +26,7 @@ export const testimonials = [
   },
   {
     id: 3,
-    avatar: './src/assets/testimonial-avatar-3.jpg',
+    avatar: testimonial3,
     name: 'Arthur Clarke',
     job: 'Co-founder of MyPhysio',
     content:
@@ -28,27 +37,27 @@ export const testimonials = [
 export const logoImages = [
   {
     id: 1,
-    path: '/src/assets/logo-the-verge.png',
+    path: logo1,
     title: 'The Verge',
   },
   {
     id: 2,
-    path: '/src/assets/logo-jakarta-post.png',
+    path: logo2,
     title: 'The Jakarta Post',
   },
   {
     id: 3,
-    path: '/src/assets/logo-the-guardian.png',
+    path: logo3,
     title: 'The Guardian',
   },
   {
     id: 4,
-    path: '/src/assets/logo-tech-radar.png',
+    path: logo4,
     title: 'TechRadar',
   },
   {
     id: 5,
-    path: '/src/assets/logo-gadgets-now.png',
+    path: logo5,
     title: 'Gadgets Now',
   },
 ];
